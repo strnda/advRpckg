@@ -1,18 +1,47 @@
-# Hello, world!
-#
-# This is an example function named 'hello' 
-# which prints 'Hello, world!'.
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Install Package:           'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
+#' hello world example
+#'
+#' @param x main argument
+#'
+#' @export
+#' @import data.table
+#'
+#' @examples
+#'
+#' hello()
+#'
+hello <- function(x = "Hello, world!") {
 
-hello <- function() {
-  print("Hello, world!")
+  # library(data.table)
+
+  dta <- data.table(hello = x)
+
+  structure(.Data = dta,
+            class = c("hello", "data.table", "data.frame"),
+            whatever = "whatever")
+}
+
+#' plot method for hello class
+#'
+#' @param x hello thingy
+#' @param ... other arguments
+#'
+#' @export
+#' @import ggplot2
+#'
+#' @method plot hello
+#'
+#' @examples
+#'
+#' plot(x = hello())
+#'
+plot.hello <- function(x, ...) {
+
+  temp <- as.data.frame(x = x)
+
+  p <- ggplot(data = temp) +
+    geom_label(mapping = aes(x = 1,
+                             y = 1,
+                             label = hello))
+
+  p
 }
