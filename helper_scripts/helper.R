@@ -1,6 +1,7 @@
 # install.packages("devtools")
 
 library(usethis)
+library(devtools)
 
 use_gpl3_license()
 
@@ -12,9 +13,10 @@ gitcreds::gitcreds_set()
 
 use_github()
 
-use_build_ignore(files = "helper.R")
+use_build_ignore(files = "helper_scripts/")
 
-# use_namespace()
+build()
+check()
 
 ?hello
 
@@ -24,9 +26,9 @@ use_test(name = "hello")
 
 # edit_r_environ()
 
-methods(generic.function = plot)
-
-methods(class = "character")
+# methods(generic.function = plot)
+#
+# methods(class = "character")
 
 rm(list = ls())
 dev.off()
@@ -43,5 +45,4 @@ attributes(x = obj)
 
 plot(x = obj)
 
-
-
+use_readme_rmd()

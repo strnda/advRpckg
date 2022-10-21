@@ -1,4 +1,5 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
-^helper\.R$
+^helper_scripts$
+^README\.Rmd$

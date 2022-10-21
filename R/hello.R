@@ -16,7 +16,7 @@ hello <- function(x = "Hello, world!") {
   dta <- data.table(hello = x)
 
   structure(.Data = dta,
-            class = c("hello", "data.table", "data.frame"),
+            class = c("hello"),
             whatever = "whatever")
 }
 
