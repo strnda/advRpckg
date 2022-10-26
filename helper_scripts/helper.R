@@ -45,4 +45,4 @@ attributes(x = obj)
 
 plot(x = obj)
 
-use_readme_rmd()
+# use_readme_rmd()
