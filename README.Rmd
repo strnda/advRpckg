@@ -35,10 +35,10 @@ devtools::install_github(repo = "strnda/advRpckg")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
 ```{r example}
 library(advRpckg)
 
 hello()
+
+plot(hello())
 ```

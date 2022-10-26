@@ -27,11 +27,14 @@ devtools::install_github(repo = "strnda/advRpckg")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
 ``` r
 library(advRpckg)
 
 hello()
-#> [1] "Hello, world!"
+#>           hello
+#> 1 Hello, world!
+
+plot(hello())
 ```
+
+<img src="man/figures/README-example-1.png" width="100%" />
