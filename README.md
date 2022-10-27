@@ -9,6 +9,10 @@
 Package containing scripts and other information for the “Advanced R
 Scripring” class
 
+**New
+[Datacamp](https://www.datacamp.com/groups/shared_links/4d01725e80c0cadfad7198b7e1327c9e2bf83b24976b2e52c029e9aace509ccf)
+invite link**
+
 ## Homework
 
 incorporate functions from “./helper_scripts/mopex_functions.R” to the
