@@ -9,27 +9,40 @@
 Package containing scripts and other information for the “Advanced R
 Scripring” class
 
-**New
-[Datacamp](https://www.datacamp.com/groups/shared_links/4d01725e80c0cadfad7198b7e1327c9e2bf83b24976b2e52c029e9aace509ccf)
-invite link**
+**Valid
+[Datacamp](https://www.datacamp.com/groups/shared_links/41eaf0594835331d7a65ca8a83e94aaed1638b3155c42041702b5724763c5ee9)
+class link**
 
-## Homework
+## Assignment
 
-incorporate functions from “./helper_scripts/mopex_functions.R” to the
-package, including **roxygen comments**, **function tests**, **error
-handling**. hint - you can fork the repo to your github
+**Create an R package containing the following:** 
+  - ability to work with *.nc files
+  - valid description file
+  - readme file with basic package info
+  - all functions (and data) should be documented
+  - all functions should have valid tests
+  - all functions should have correct error handling
+  - correctly established methods for generic functions
+  - package should pass basic check with no errors, no warnings and no notes
 
-## Installation
+**Data**
+  - data vailable [here](https://owncloud.cesnet.cz/index.php/s/HyKD3KXSOontoKX/download).
 
-You can install the development version of advRpckg from
-[GitHub](https://github.com/) with:
+**What should the package do:**
+  - package should be able to import *.nc files and calculate multiple IDF models
+  - areas for IDF estimation can be chosen randomly (random cell numbers) or can be selected using a polygon (*.shp file)
+  - result should be both graphical and numerical representation of the IDF model
+  
+## How to submit
+
+Package should be available on you github pages and containig the following guide for package instalation:
+
+You can install the development version of advRpckg from GitHub with:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github(repo = "strnda/advRpckg")
 ```
-
-## Example
 
 ``` r
 library(advRpckg)
@@ -40,5 +53,9 @@ hello()
 
 plot(hello())
 ```
-
 <img src="man/figures/README-example-1.png" width="100%" />
+
+**Submit (send to my email) only a link to your github repo.**
+
+
+
