@@ -35,6 +35,8 @@ class link**
   
 ## How to submit
 
+**Submit (send to my email) only a link to your github repo.**
+
 Package should be available on you github pages and containig the following guide for package instalation:
 
 You can install the development version of advRpckg from GitHub with:
@@ -55,7 +57,7 @@ plot(hello())
 ```
 <img src="man/figures/README-example-1.png" width="100%" />
 
-**Submit (send to my email) only a link to your github repo.**
+
 
 
 
